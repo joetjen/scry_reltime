@@ -95,7 +95,7 @@ defmodule Scry.Reltime.MixProject do
   end
 
   defp description do
-    "The relational + time-series composite kind for Scry (impl_spec.md §2/§6) -- a " <>
+    "The relational + time-series composite kind for Scry -- a " <>
       "thin delegate to scry_time_series (relational contributes no grammar/execution " <>
       "vocabulary of its own), with a real end-to-end test proving nested-SELECT " <>
       "correlation composes correctly with LAST, not just asserting it does."

@@ -1,7 +1,6 @@
 defmodule Scry.Reltime do
   @moduledoc """
-  The `relational` + `time-series` composite kind for
-  [Scry](https://github.com/joetjen/scry) (impl_spec.md §2/§6) --
+  The `relational` + `time-series` composite kind for Scry --
   `SELECT users WHERE age > 30 { name, SELECT events LAST 1h OF
   timestamp { id } }`, a relational-shaped nested-`SELECT` correlation
   (Scry's own `JOIN` equivalent) alongside `LAST`/`rate(<duration>)`.
@@ -21,8 +20,8 @@ defmodule Scry.Reltime do
   tree. There is nothing left for this package to add: this composite's
   real value already exists with zero new code, confirmed with a real
   end-to-end test against `scry_engine_inmemory` (this package's own
-  `CHANGELOG.md` has the full "what we proved, not just assumed" story)
-  rather than only asserted in `impl_spec.md`'s own prose.
+  `CHANGELOG.md` has the full "what we proved, not just assumed" story),
+  not just assumed.
 
   `parse/1` mirrors `Scry.TimeSeries.parse/1` (there is no grammar
   fragment of this package's own to compose in); use `Scry.TimeSeries.

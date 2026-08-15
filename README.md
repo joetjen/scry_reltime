@@ -1,7 +1,7 @@
 # Scry.Reltime
 
-The `relational` + `time-series` composite kind for [Scry](https://github.com/joetjen/scry)
-(impl_spec.md §2/§6) -- the canonical dependency name for an application combining a
+The `relational` + `time-series` composite kind for Scry -- the canonical dependency
+name for an application combining a
 relational-shaped query (nested-`SELECT` correlation, Scry's own `JOIN` equivalent) with
 `LAST <duration> OF <field>`/`rate(<duration>)`.
 
